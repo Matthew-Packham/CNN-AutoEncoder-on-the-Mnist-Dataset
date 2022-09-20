@@ -20,4 +20,4 @@ Given that we have taken a (28,28,1) image and compressed it down to a (2,) dime
 
 Here are some reconstructions and the orginal images taken from the test set! 
 
-![](Examples%20of%20reconstructions.png) 
+![](Examples%20of%20reconstructions%20.png) 
