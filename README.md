@@ -4,6 +4,7 @@
 In this project, I will implement a CNN autoencoder for the Fashion-MNIST dataset, and examine the learned encodings.
 
 ![](Fashion-MNIST-dataset.jpeg)
+
 *Fashion MNist Dataset Sample*
 
 ## Implementation
