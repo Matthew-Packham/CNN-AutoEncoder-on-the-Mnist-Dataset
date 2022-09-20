@@ -17,3 +17,7 @@ Here are the results:
 
 So we can see that the clusters are far more condensed after the trained encoding meaning that our encoder is in fact encoding. Intrestingly we see that clothing that is similar in apperance and usage are more closely clustered - with overlaps. For example 'ankle boot' (brown), 'sneaker' (orange) and 'sandal' (light green) which we wear on our feet are seperate from the other clusters which represent clothes we wear on our body! This makes sense since footwear have features that are seperate and distingwishable from clothing and hence are represented seperately in the latent (encoding) space! We can also see that clothing that is similar and hence share similar features overlap in the latent space. Shirt (yellow), for example has a large spread and overlaps several classes, but doesnt overlap (as heavely) trousers (light purple).
 Given that we have taken a (28,28,1) image and compressed it down to a (2,) dimenional space, we see that relatively large amounts of infomation remain and that there is infact some interprebility from the clusterings!
+
+Here are some reconstructions and the orginal images taken from the test set! 
+
+![](Examples%20of%20reconstructions.png) 
