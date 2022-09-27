@@ -7,10 +7,12 @@ In this project, I will implement a CNN autoencoder for the Fashion-MNIST datase
 
 *Fashion MNist Dataset Sample*
 
-## Implementation
-I trained a CNN encoder to take (28,28,1) grey-scale images and encode as much infomation as possible into a (2,) dimensional encoded space. AutoEncoders are a combination of two Neural Networks namely the Encoder (which aims to decompress the data to a reduced dimensional space) and the Decoder (which aims to reconstruct the orignial data from this reduced dimenional encoded space). In case of simple autoencoders, the output is expected to be the same as the input with reduced noise.
+## AutoEncoder Summary
 
-I used TensorFlow.Keras.models.Model model to combine the two neural networks. A Binary cross Entropy is used as the loss function, to calculate the loss between the original (normalised to (0,1)) input image and the reconstructed image. I used the defult 'RMSprop' Optimizer to optimize the weights. 
+AutoEncoders are a combination of two Neural Networks namely the Encoder (which aims to decompress the data to a reduced dimensional space) and the Decoder (which aims to reconstruct the orignial data from this reduced dimenional encoded space). In case of simple autoencoders, the output is expected to be the same as the input with reduced noise. Simple autoencoders are **deterministic**, in that they decompress the input to a reduced space and then try to reconstruct the input from this encoded space. Variational AutoEncoders, on the other hand, are Probablitic models since they learn to encode a latent distribution (learn mean and std vectors for each of the latent variables), we then sample from this latent distribution and then aim to decode this sample. The output is the decoded manifestation of the sampled latent representation.
+
+## Implementation
+I trained a CNN encoder to take (28,28,1) grey-scale images and encode as much infomation as possible into a (2,) dimensional encoded space. I used TensorFlow.Keras.models.Model model to combine the two neural networks. A Binary cross Entropy is used as the loss function, to calculate the loss between the original (normalised to (0,1)) input image and the reconstructed image. I used the defult 'RMSprop' Optimizer to optimize the weights. 
 
 ## Results
 Here are the results:
